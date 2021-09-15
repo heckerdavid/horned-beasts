@@ -68,3 +68,39 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+#### Feature tracking
+
+Number and name of feature: Feature #1: Display images
+
+Estimate of time needed to complete: 40 min
+
+Start time: 1425
+
+Finish time: 1435
+
+Actual time needed to complete: 10 min
+
+<!--  -->
+
+Number and name of feature: Feature #2: Allow users to vote for their favorite beast
+
+Estimate of time needed to complete: 40 min
+
+Start time: 1440
+
+Finish time: 1510
+
+Actual time needed to complete: 30 min
+
+<!--  -->
+
+Number and name of feature: Feature 3: Bootstrap
+
+Estimate of time needed to complete: 1 Hour
+
+Start time: 1530
+
+Finish time: 1700
+
+Actual time needed to complete: 1.5 hours
