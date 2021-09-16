@@ -1,12 +1,11 @@
-// import logo from './logo.svg';
 import React from 'react';
-import { Component } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 import Header from './header.js';
 import Main from './main.js';
 import Footer from './footer.js';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div>
