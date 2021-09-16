@@ -7,11 +7,20 @@ import Button from "react-bootstrap/Button";
 
 class Main extends React.Component {
 
+
+  // updateSelected = (item) => this.props.updateSelected(item)
+
   render() {
     return (
       <Container fluid>
         <Row md={3} lg={4} xl={5}>
-          {this.props.beastData.map((horn, idx) => <HornedBeasts data={horn} key={idx}/>)}
+          {this.props.beastData.map((horn, idx) => (
+            <HornedBeasts
+              data={horn}
+              key={idx}
+              updateSelected={this.updateSelected}
+            />
+          ))}
         </Row>
       </Container>
     );
@@ -19,7 +28,6 @@ class Main extends React.Component {
 }
 
 class HornedBeasts extends React.Component {
-
   constructor(props) {
     super(props);
 
@@ -28,10 +36,14 @@ class HornedBeasts extends React.Component {
     };
   }
 
+  // updateSelected = (item) => this.props.updateSelected(item);
+
   render() {
     return (
       <Card style={{ width: "15rem" }}>
-        <Card.Img variant="top" src={this.props.data.image_url} />
+        <Card.Img variant="top" src={this.props.data.image_url} 
+        // onClick={this.updateSelected(this.props.image_url)}
+        />
         <Card.Body>
           <Card.Title>{this.props.data.title}</Card.Title>
           <Card.Text>{this.props.data.description}</Card.Text>

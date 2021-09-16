@@ -8,12 +8,21 @@ import beastData from "./data.json";
 
 class App extends React.Component {
 
+  constructor(props){
+    super(props);
+    this.state = {
+      selectedBeast: null
+    }
+  }
+
+  // updateSelected = (newSelection) => {this.setState({selectedBeast: newSelection}); };
+
   render() {
     return (
       <div>
         <Header header="Horns" />
-        <Main beastData={beastData} />
-        <Footer footer="Made by David, Brains by Hexx" />
+        <Main beastData={beastData} updateSelected={this.updateSelected}/>
+        <Footer footer="Made by David, Brains by Hexx/Sara" />
       </div>
     );
   }
