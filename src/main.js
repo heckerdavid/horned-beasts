@@ -8,7 +8,9 @@ import Button from "react-bootstrap/Button";
 class Main extends React.Component {
 
 
-  // updateSelected = (item) => this.props.updateSelected(item)
+  updateSelected = (newSel) => {
+    this.props.updateSelected(newSel);
+  }  
 
   render() {
     return (
@@ -33,16 +35,22 @@ class HornedBeasts extends React.Component {
 
     this.state = {
       favorites: 0,
+      newSelectedBeast: null,
     };
   }
 
-  // updateSelected = (item) => this.props.updateSelected(item);
+  updateSelected = () => this.props.updateSelected(this.state.newSelectedBeast);
+
+  handleClick = () => {
+    this.setState({newSelectedBeast: this.props.data.image_url})
+    this.updateSelected()
+  }
 
   render() {
     return (
       <Card style={{ width: "15rem" }}>
         <Card.Img variant="top" src={this.props.data.image_url} 
-        // onClick={this.updateSelected(this.props.image_url)}
+        onClick={this.handleClick}
         />
         <Card.Body>
           <Card.Title>{this.props.data.title}</Card.Title>
