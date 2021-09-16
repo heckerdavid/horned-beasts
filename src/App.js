@@ -4,17 +4,18 @@ import './App.css';
 import Header from './header.js';
 import Main from './main.js';
 import Footer from './footer.js';
+import beastData from "./data.json";
 
 class App extends React.Component {
+
   render() {
     return (
       <div>
-        <Header />
-        <Main />
-        <Footer />
-     </div>
+        <Header header="Horns" />
+        <Main beastData={beastData} />
+        <Footer footer="Made by David, Brains by Hexx" />
+      </div>
     );
-
   }
 }
 
