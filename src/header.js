@@ -1,9 +1,9 @@
-import { Component } from "react";
+import React from "react";
 
-class Header extends Component {
+class Header extends React.Component {
   
   render() {
-    return <h1>HEADER BEDER be gud</h1>
+    return <h1>{this.props.header}</h1>
   }
 }
 
