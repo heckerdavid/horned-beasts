@@ -118,7 +118,7 @@ Number and name of feature: Feature #1: Display a Modal
 
 Estimate of time needed to complete: 2 hours
 
-Start time: 1700 / 0740
+Start time: 1700 / 0740 / 1315
 
 Finish time: 2000 / 0855
 
