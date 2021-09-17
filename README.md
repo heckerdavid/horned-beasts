@@ -1,3 +1,10 @@
+# Code 301 Horned Beasts
+
+This is a simple app made for code 301 week 1, it should display horned animals and respond to user inputs.
+
+Made with react, bootstrap, and lots of effort.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -111,8 +118,8 @@ Number and name of feature: Feature #1: Display a Modal
 
 Estimate of time needed to complete: 2 hours
 
-Start time: _____
+Start time: 1700 / 0740 / 1315
 
-Finish time: _____
+Finish time: 2000 / 0855
 
 Actual time needed to complete: _____
